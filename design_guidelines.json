@@ -1,0 +1,107 @@
+{
+  "theme": "Dark",
+  "archetype": "4 (Swiss & High-Contrast) + Bio-Tech Variant",
+  "design_philosophy": "A control-room interface for bio-acoustic researchers. Extreme clarity, technical grids, and organic subjects contrasted against clinical data analysis.",
+  "colors": {
+    "background": "#0A0B0A",
+    "surface": "#121413",
+    "foreground": "#E8F0E5",
+    "muted_text": "#828C85",
+    "border": "#232724",
+    "primary_accent": "#D9F268",
+    "secondary_accent": "#FF6B4A",
+    "chart_colors": [
+      "#D9F268",
+      "#FF6B4A",
+      "#4ADE80",
+      "#FBBF24"
+    ]
+  },
+  "typography": {
+    "headings": "Chivo",
+    "body": "Work Sans",
+    "mono": "JetBrains Mono",
+    "hierarchy_rules": {
+      "h1": "text-4xl sm:text-5xl tracking-tighter font-black uppercase",
+      "h2": "text-2xl sm:text-3xl tracking-tight font-bold",
+      "h3": "text-lg font-semibold",
+      "body": "text-base leading-relaxed",
+      "labels": "text-xs tracking-[0.2em] uppercase font-mono"
+    }
+  },
+  "layout_and_spacing": {
+    "grid_system": "The 'Control Room' Grid. Strict bento box layout. Base grid: grid-cols-1 md:grid-cols-4 lg:grid-cols-12. Tight gaps (gap-4 or gap-6).",
+    "spacing_scale": "p-4, p-6 for widgets. Containers with borders must have internal padding.",
+    "surface_strategy": "Grid Borders. border-collapse style. 1px borders, completely flat (no box-shadows), subtle rounded corners (rounded-sm maximum, 4px).",
+    "alignment": "Strictly left-aligned data and typography for readability."
+  },
+  "components": {
+    "buttons": "Flat, sharp edges. Primary button uses primary_accent bg with black text. Hover state: slight opacity drop or inner glow.",
+    "cards": "Flat background, 1px solid border (#232724). No shadow.",
+    "audio_player": "Must include a visualizer (mocked via CSS animations or framer-motion) with bars that react. Use JetBrains Mono for timestamps.",
+    "tabs": "Minimalist, no pills. Underline indicator or pure text color change on active.",
+    "charts": "Use Recharts. Minimal grid lines, no tooltips with heavy shadows."
+  },
+  "motion_and_interaction": {
+    "hover_states": "Crisp transitions. Text color changes, 1px border highlights.",
+    "loading_states": "Retro-futuristic terminal scanlines or ASCII art loader to emphasize 'AI Processing'.",
+    "transitions": "Fast, technical snaps (0.15s ease-in-out) rather than floaty organic morphs."
+  },
+  "assets": {
+    "icons": "Use @phosphor-icons/react (Duotone or Regular weight).",
+    "images": [
+      {
+        "category": "animal_portraits",
+        "description": "High resolution portrait of a Monkey",
+        "url": "https://images.unsplash.com/photo-1668335529036-7de688096d3b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwyfHxtb25rZXklMjBmYWNlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzc1NDYwMzQwfDA&ixlib=rb-4.1.0&q=85",
+        "animal": "monkey"
+      },
+      {
+        "category": "animal_portraits",
+        "description": "High resolution portrait of a Parrot",
+        "url": "https://images.unsplash.com/photo-1660292294670-67aa87d93055?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHwyfHxtYWNhdyUyMHBhcnJvdCUyMGZhY2UlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzU0NjAzMzl8MA&ixlib=rb-4.1.0&q=85",
+        "animal": "parrot"
+      },
+      {
+        "category": "animal_portraits",
+        "description": "High resolution portrait of a Tiger",
+        "url": "https://images.unsplash.com/photo-1661769212734-67877c79deff?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHx0aWdlciUyMGZhY2UlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzU0NjAzMzl8MA&ixlib=rb-4.1.0&q=85",
+        "animal": "tiger"
+      },
+      {
+        "category": "animal_portraits",
+        "description": "High resolution portrait of a Lion",
+        "url": "https://static.prod-images.emergentagent.com/jobs/e8cf87b4-f34d-45c3-905e-15665110f855/images/1871709622b750c472dc9976cdf99a180b683d109456c984ab7b04cd2ee04048.png",
+        "animal": "lion"
+      },
+      {
+        "category": "animal_portraits",
+        "description": "High resolution portrait of a Horse",
+        "url": "https://static.prod-images.emergentagent.com/jobs/e8cf87b4-f34d-45c3-905e-15665110f855/images/b645448038b61c3021155472e544c3a6f4b610cfceb3301268fa90bbe0698d78.png",
+        "animal": "horse"
+      },
+      {
+        "category": "animal_portraits",
+        "description": "High resolution portrait of a Cat",
+        "url": "https://static.prod-images.emergentagent.com/jobs/e8cf87b4-f34d-45c3-905e-15665110f855/images/33a08cb367948e44e5dc0d6d772049010bf980f684400451f9febaa0e20f31f7.png",
+        "animal": "cat"
+      },
+      {
+        "category": "animal_portraits",
+        "description": "High resolution portrait of a Dog",
+        "url": "https://static.prod-images.emergentagent.com/jobs/e8cf87b4-f34d-45c3-905e-15665110f855/images/d45c850154606f68e31aee15e96c04227008e560a862b25eb0aec1aca8fcfb4e.png",
+        "animal": "dog"
+      }
+    ]
+  },
+  "data_testid_rules": "All interactive elements MUST include a data-testid attribute in kebab-case specifying their role.",
+  "instructions_to_main_agent": [
+    "Build a strict 'Control Room' grid layout for the dashboard.",
+    "Use pure HTML + Tailwind for structural layouts to enable tight bento grids, use Shadcn selectively for interactive elements like Select or Tabs.",
+    "Implement an audio player with a mocked waveform visualizer.",
+    "Display the selected animal's image prominently using the provided asset URLs.",
+    "Ensure the layout feels dense and technical. Do NOT use soft shadows or heavy radiuses.",
+    "For the AI interpretation component, use a typing animation or a distinct text style to highlight the translation.",
+    "Do NOT use standard SaaS blue. Rely heavily on the deep background and neon/warm accents for interactive elements."
+  ]
+}
