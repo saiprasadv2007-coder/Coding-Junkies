@@ -33,15 +33,16 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Animal Data - Predefined expressions and vocalizations
+# Audio URLs from BigSoundBank (free, royalty-free)
 ANIMALS_DATA = {
     "monkey": {
         "name": "Monkey",
         "scientific_name": "Primates",
         "image": "https://images.unsplash.com/photo-1668335529036-7de688096d3b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwyfHxtb25rZXklMjBmYWNlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzc1NDYwMzQwfDA&ixlib=rb-4.1.0&q=85",
         "vocalizations": [
-            {"id": "monkey_screech", "name": "Screech", "context": "alarm", "audio_url": "https://www.soundjay.com/nature/sounds/monkey-screech-01.mp3", "description": "High-pitched alarm call warning of predators"},
-            {"id": "monkey_chatter", "name": "Chatter", "context": "social", "audio_url": "https://www.soundjay.com/nature/sounds/monkey-1.mp3", "description": "Social communication between group members"},
-            {"id": "monkey_hoot", "name": "Hoot", "context": "territorial", "audio_url": "https://www.soundjay.com/nature/sounds/monkey-2.mp3", "description": "Territorial call to establish dominance"}
+            {"id": "monkey_screech", "name": "Screech", "context": "alarm", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/0170.mp3", "description": "High-pitched alarm call warning of predators"},
+            {"id": "monkey_chatter", "name": "Chatter", "context": "social", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/1070.mp3", "description": "Social communication between group members"},
+            {"id": "monkey_hoot", "name": "Hoot", "context": "territorial", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/0653.mp3", "description": "Territorial call to establish dominance"}
         ],
         "expressions": [
             {"id": "monkey_teeth_bared", "name": "Teeth Bared", "emotion": "fear/submission", "meaning": "I feel threatened and am showing submission"},
@@ -55,10 +56,10 @@ ANIMALS_DATA = {
         "scientific_name": "Canis lupus familiaris",
         "image": "https://static.prod-images.emergentagent.com/jobs/e8cf87b4-f34d-45c3-905e-15665110f855/images/d45c850154606f68e31aee15e96c04227008e560a862b25eb0aec1aca8fcfb4e.png",
         "vocalizations": [
-            {"id": "dog_bark", "name": "Bark", "context": "alert", "audio_url": "https://www.soundjay.com/animal/sounds/dog-barking-01.mp3", "description": "Alert bark to notify of presence or danger"},
-            {"id": "dog_whine", "name": "Whine", "context": "need", "audio_url": "https://www.soundjay.com/animal/sounds/dog-whining-01.mp3", "description": "Expression of need, discomfort, or anxiety"},
-            {"id": "dog_growl", "name": "Growl", "context": "warning", "audio_url": "https://www.soundjay.com/animal/sounds/dog-growling-01.mp3", "description": "Warning signal indicating displeasure or threat"},
-            {"id": "dog_howl", "name": "Howl", "context": "communication", "audio_url": "https://www.soundjay.com/animal/sounds/dog-howling-01.mp3", "description": "Long-distance communication or response to sounds"}
+            {"id": "dog_bark", "name": "Bark", "context": "alert", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/0288.mp3", "description": "Alert bark to notify of presence or danger"},
+            {"id": "dog_whine", "name": "Whine", "context": "need", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/1544.mp3", "description": "Expression of need, discomfort, or anxiety"},
+            {"id": "dog_growl", "name": "Growl", "context": "warning", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/0682.mp3", "description": "Warning signal indicating displeasure or threat"},
+            {"id": "dog_howl", "name": "Howl", "context": "communication", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/2450.mp3", "description": "Long-distance communication or response to sounds"}
         ],
         "expressions": [
             {"id": "dog_happy", "name": "Happy/Excited", "emotion": "joy", "meaning": "I'm so happy to see you! Let's play!"},
@@ -72,10 +73,10 @@ ANIMALS_DATA = {
         "scientific_name": "Felis catus",
         "image": "https://static.prod-images.emergentagent.com/jobs/e8cf87b4-f34d-45c3-905e-15665110f855/images/33a08cb367948e44e5dc0d6d772049010bf980f684400451f9febaa0e20f31f7.png",
         "vocalizations": [
-            {"id": "cat_meow", "name": "Meow", "context": "communication", "audio_url": "https://www.soundjay.com/animal/sounds/cat-meow-01.mp3", "description": "Primary vocalization for human communication"},
-            {"id": "cat_purr", "name": "Purr", "context": "contentment", "audio_url": "https://www.soundjay.com/animal/sounds/cat-purr-01.mp3", "description": "Sign of contentment or self-soothing"},
-            {"id": "cat_hiss", "name": "Hiss", "context": "defensive", "audio_url": "https://www.soundjay.com/animal/sounds/cat-hissing-01.mp3", "description": "Defensive warning to back away"},
-            {"id": "cat_chirp", "name": "Chirp/Trill", "context": "greeting", "audio_url": "https://www.soundjay.com/animal/sounds/cat-meow-02.mp3", "description": "Friendly greeting or attention-seeking"}
+            {"id": "cat_meow", "name": "Meow", "context": "communication", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/1890.mp3", "description": "Primary vocalization for human communication"},
+            {"id": "cat_purr", "name": "Purr", "context": "contentment", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/0436.mp3", "description": "Sign of contentment or self-soothing"},
+            {"id": "cat_hiss", "name": "Hiss", "context": "defensive", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/1887.mp3", "description": "Defensive warning to back away"},
+            {"id": "cat_chirp", "name": "Chirp/Trill", "context": "greeting", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/0098.mp3", "description": "Friendly greeting or attention-seeking"}
         ],
         "expressions": [
             {"id": "cat_slow_blink", "name": "Slow Blink", "emotion": "affection", "meaning": "I trust you completely - you're my friend"},
@@ -89,10 +90,10 @@ ANIMALS_DATA = {
         "scientific_name": "Equus caballus",
         "image": "https://static.prod-images.emergentagent.com/jobs/e8cf87b4-f34d-45c3-905e-15665110f855/images/b645448038b61c3021155472e544c3a6f4b610cfceb3301268fa90bbe0698d78.png",
         "vocalizations": [
-            {"id": "horse_neigh", "name": "Neigh/Whinny", "context": "social", "audio_url": "https://www.soundjay.com/animal/sounds/horse-neigh-01.mp3", "description": "Social call to locate or greet other horses"},
-            {"id": "horse_snort", "name": "Snort", "context": "alert", "audio_url": "https://www.soundjay.com/animal/sounds/horse-snort-01.mp3", "description": "Alert signal or clearing of airways"},
-            {"id": "horse_nicker", "name": "Nicker", "context": "affection", "audio_url": "https://www.soundjay.com/animal/sounds/horse-1.mp3", "description": "Soft greeting showing affection"},
-            {"id": "horse_squeal", "name": "Squeal", "context": "excitement", "audio_url": "https://www.soundjay.com/animal/sounds/horse-2.mp3", "description": "Excitement or displeasure during interaction"}
+            {"id": "horse_neigh", "name": "Neigh/Whinny", "context": "social", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/0863.mp3", "description": "Social call to locate or greet other horses"},
+            {"id": "horse_snort", "name": "Snort", "context": "alert", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/0611.mp3", "description": "Alert signal or clearing of airways"},
+            {"id": "horse_nicker", "name": "Nicker", "context": "affection", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/1543.mp3", "description": "Soft greeting showing affection"},
+            {"id": "horse_squeal", "name": "Squeal", "context": "excitement", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/0289.mp3", "description": "Excitement or displeasure during interaction"}
         ],
         "expressions": [
             {"id": "horse_ears_forward", "name": "Ears Forward", "emotion": "alert/interested", "meaning": "Something caught my attention - I'm curious"},
@@ -106,10 +107,10 @@ ANIMALS_DATA = {
         "scientific_name": "Panthera leo",
         "image": "https://static.prod-images.emergentagent.com/jobs/e8cf87b4-f34d-45c3-905e-15665110f855/images/1871709622b750c472dc9976cdf99a180b683d109456c984ab7b04cd2ee04048.png",
         "vocalizations": [
-            {"id": "lion_roar", "name": "Roar", "context": "territorial", "audio_url": "https://www.soundjay.com/animal/sounds/lion-roar-01.mp3", "description": "Territorial call heard up to 5 miles away"},
-            {"id": "lion_growl", "name": "Growl", "context": "warning", "audio_url": "https://www.soundjay.com/animal/sounds/lion-growl-01.mp3", "description": "Warning signal during confrontation"},
-            {"id": "lion_grunt", "name": "Grunt", "context": "contact", "audio_url": "https://www.soundjay.com/animal/sounds/lion-1.mp3", "description": "Soft contact call within the pride"},
-            {"id": "lion_snarl", "name": "Snarl", "context": "aggressive", "audio_url": "https://www.soundjay.com/animal/sounds/lion-2.mp3", "description": "Aggressive display during conflict"}
+            {"id": "lion_roar", "name": "Roar", "context": "territorial", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/1810.mp3", "description": "Territorial call heard up to 5 miles away"},
+            {"id": "lion_growl", "name": "Growl", "context": "warning", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/2107.mp3", "description": "Warning signal during confrontation"},
+            {"id": "lion_grunt", "name": "Grunt", "context": "contact", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/0486.mp3", "description": "Soft contact call within the pride"},
+            {"id": "lion_snarl", "name": "Snarl", "context": "aggressive", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/2108.mp3", "description": "Aggressive display during conflict"}
         ],
         "expressions": [
             {"id": "lion_yawn", "name": "Wide Yawn", "emotion": "relaxed/display", "meaning": "I'm relaxed, or showing my powerful teeth"},
@@ -123,10 +124,10 @@ ANIMALS_DATA = {
         "scientific_name": "Psittaciformes",
         "image": "https://images.unsplash.com/photo-1660292294670-67aa87d93055?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHwyfHxtYWNhdyUyMHBhcnJvdCUyMGZhY2UlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzU0NjAzMzl8MA&ixlib=rb-4.1.0&q=85",
         "vocalizations": [
-            {"id": "parrot_squawk", "name": "Squawk", "context": "alert", "audio_url": "https://www.soundjay.com/animal/sounds/parrot-1.mp3", "description": "Loud alarm call for danger or attention"},
-            {"id": "parrot_chatter", "name": "Chatter", "context": "happy", "audio_url": "https://www.soundjay.com/animal/sounds/parrot-2.mp3", "description": "Content sounds when comfortable"},
-            {"id": "parrot_whistle", "name": "Whistle", "context": "social", "audio_url": "https://www.soundjay.com/animal/sounds/bird-chirp-01.mp3", "description": "Social call to connect with flock"},
-            {"id": "parrot_screech", "name": "Screech", "context": "distress", "audio_url": "https://www.soundjay.com/animal/sounds/bird-1.mp3", "description": "High-pitched distress or excitement call"}
+            {"id": "parrot_squawk", "name": "Squawk", "context": "alert", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/2776.mp3", "description": "Loud alarm call for danger or attention"},
+            {"id": "parrot_chatter", "name": "Chatter", "context": "happy", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/2781.mp3", "description": "Content sounds when comfortable"},
+            {"id": "parrot_whistle", "name": "Whistle", "context": "social", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/1165.mp3", "description": "Social call to connect with flock"},
+            {"id": "parrot_screech", "name": "Screech", "context": "distress", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/2779.mp3", "description": "High-pitched distress or excitement call"}
         ],
         "expressions": [
             {"id": "parrot_pinning", "name": "Eye Pinning", "emotion": "excited/focused", "meaning": "I'm very interested or excited about something"},
@@ -140,10 +141,10 @@ ANIMALS_DATA = {
         "scientific_name": "Panthera tigris",
         "image": "https://images.unsplash.com/photo-1661769212734-67877c79deff?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHx0aWdlciUyMGZhY2UlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzU0NjAzMzl8MA&ixlib=rb-4.1.0&q=85",
         "vocalizations": [
-            {"id": "tiger_roar", "name": "Roar", "context": "territorial", "audio_url": "https://www.soundjay.com/animal/sounds/tiger-roar-01.mp3", "description": "Powerful territorial announcement"},
-            {"id": "tiger_chuff", "name": "Chuff/Prusten", "context": "friendly", "audio_url": "https://www.soundjay.com/animal/sounds/tiger-1.mp3", "description": "Friendly greeting sound - unique to tigers"},
-            {"id": "tiger_growl", "name": "Growl", "context": "warning", "audio_url": "https://www.soundjay.com/animal/sounds/tiger-growl-01.mp3", "description": "Warning signal during confrontation"},
-            {"id": "tiger_moan", "name": "Moan", "context": "communication", "audio_url": "https://www.soundjay.com/animal/sounds/tiger-2.mp3", "description": "Long-distance communication call"}
+            {"id": "tiger_roar", "name": "Roar", "context": "territorial", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/0929.mp3", "description": "Powerful territorial announcement"},
+            {"id": "tiger_chuff", "name": "Chuff/Prusten", "context": "friendly", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/1809.mp3", "description": "Friendly greeting sound - unique to tigers"},
+            {"id": "tiger_growl", "name": "Growl", "context": "warning", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/2110.mp3", "description": "Warning signal during confrontation"},
+            {"id": "tiger_moan", "name": "Moan", "context": "communication", "audio_url": "https://bigsoundbank.com/UPLOAD/mp3/0170.mp3", "description": "Long-distance communication call"}
         ],
         "expressions": [
             {"id": "tiger_relaxed", "name": "Relaxed Face", "emotion": "calm", "meaning": "I'm at peace and not threatened"},
